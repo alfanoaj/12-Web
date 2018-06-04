@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+              
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="max temp.html">Max Temperature</a></li>
+                            <li><a class ="border" href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="wind speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="col-md-7 col-sm-12">
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">Cloudiness</div>
+                    <div class="panel-body">
+                        <img class = "main_image" src="City Latitude vs. Cloudiness (April-21-2018).png" alt="Latitude vs. Cloudiness"/>
+                        <p class="landing_font">As we can see, it is evident that there is not any correlation between cloudiness and latitude.  With over 500 cities sampled for the project, we can say with reasonable certainty that no correlation exists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class = "col-md-5 col-sm-12">
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">Visualizations</div>
+                    <div class="panel-body">
+                        <a href= "max temp.html">
+                            <img class = "landing_side_image" src="City Latitude vs. Max Temperature (April-21-2018).png" alt="Latitude vs. Max Temperature"/>
+                        </a>
+                        <a href= "cloudiness.html">
+                            <img style="border-style:solid; border-width:3px; border-color: rgb(39, 172, 161)" class = "landing_side_image" src="City Latitude vs. Cloudiness (April-21-2018).png" alt="Latitude vs. Cloudiness"/>
+                        </a>
+                        <a href= "humidity.html">    
+                            <img class = "landing_side_image" src="City Latitude vs. Humidity(April-21-2018).png" alt="Latitude vs. Humidity"/>
+                        </a>
+                        <a href= "wind speed.html">
+                            <img class = "landing_side_image" src="City Latitude vs. Wind Speed (April-21-2018).png" alt="Latitude vs. Wind Speed"/>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>

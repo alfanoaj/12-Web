@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+              
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="#myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="max temp.html">Max Temperature</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="wind speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Comparison: Latitude vs. X</h1>
+                </div>
+                <div class="panel-body">
+                    <h2 class="header">Click any plot to get an in-depth analysis:</h2>
+                    <div class="col-md-6 col-sm-12">
+                        <h3 class="titles">vs. Max Temperature</h3>
+                        <a href= "max temp.html">
+                            <img class="comparisons" src="City Latitude vs. Max Temperature (April-21-2018).png"/>
+                        </a>
+                        <h3 class="titles">vs. Cloudiness</h3>
+                        <a href= "cloudiness.html">
+                            <img class="comparisons" src="City Latitude vs. Cloudiness (April-21-2018).png"/>    
+                        </a>    
+                        </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h3 class="titles">vs. Humidity</h3>
+                        <a href= "humidity.html">
+                            <img class="comparisons" src="City Latitude vs. Humidity(April-21-2018).png"/>
+                        </a>
+                        <h3 class="titles">vs. Wind Speed</h3>
+                        <a href= "wind speed.html">
+                            <img class="comparisons" src="City Latitude vs. Wind Speed (April-21-2018).png"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
